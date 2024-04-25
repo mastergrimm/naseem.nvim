@@ -78,7 +78,7 @@ local theme = lush(function(injected_functions)
 		-- TermCursor     { }, -- Cursor in a focused terminal
 		-- TermCursorNC   { }, -- Cursor in an unfocused terminal
 		ErrorMsg({ fg = "#f7563b", bg = "#221518" }), -- Error messages on the command line
-		-- VertSplit      { }, -- Column separating vertically split windows
+		VertSplit({ fg = "#2b2d2f" }), -- Column separating vertically split windows
 		Folded({}), -- Line used for closed folds
 		-- FoldColumn     { }, -- 'foldcolumn'
 		-- SignColumn     { }, -- Column where |signs| are displayed
@@ -96,19 +96,19 @@ local theme = lush(function(injected_functions)
 		-- MsgArea        { }, -- Area for messages and cmdline
 		-- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
 		-- MoreMsg        { }, -- |more-prompt|
-		-- NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+		NonText({ fg = "#454752" }), -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal({ bg = "#0b0e11", fg = "#f1ffff" }), -- Normal text
 		-- NormalFloat    { }, -- Normal text in floating windows.
 		-- FloatBorder    { }, -- Border of floating windows.
 		-- FloatTitle     { }, -- Title of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windows
-		-- Pmenu          { }, -- Popup menu: Normal item.
+		Pmenu({ bg = "#0b0e11" }), -- Popup menu: Normal item.
 		-- PmenuSel       { }, -- Popup menu: Selected item.
 		-- PmenuKind      { }, -- Popup menu: Normal item "kind"
 		-- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
 		-- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
 		-- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
-		-- PmenuSbar      { }, -- Popup menu: Scrollbar.
+		-- PmenuSbar({ background = "#0b0e11" }), -- Popup menu: Scrollbar.
 		-- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
 		-- Question       { }, -- |hit-enter| prompt and yes/no questions
 		-- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
