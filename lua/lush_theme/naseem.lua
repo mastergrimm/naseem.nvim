@@ -79,9 +79,9 @@ local theme = lush(function(injected_functions)
 		-- TermCursorNC   { }, -- Cursor in an unfocused terminal
 		ErrorMsg({ fg = "#f7563b", bg = "#221518" }), -- Error messages on the command line
 		VertSplit({ fg = "#2b2d2f" }), -- Column separating vertically split windows
-		Folded({}), -- Line used for closed folds
+		-- Folded({}), -- Line used for closed folds
 		-- FoldColumn     { }, -- 'foldcolumn'
-		-- SignColumn     { }, -- Column where |signs| are displayed
+		SignColumn({}), -- Column where |signs| are displayed
 		-- IncSearch      { }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
 		-- Substitute     { }, -- |:substitute| replacement text highlighting
 		-- LineNr         { }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
@@ -143,17 +143,17 @@ local theme = lush(function(injected_functions)
 
 		Comment({ fg = "#637777", gui = "italic" }), -- Any comment
 
-		-- Constant       { }, -- (*) Any constant
+		Constant({ fg = "#ecc48d" }), -- (*) Any constant
 		-- String         { }, --   A string constant: "this is a string"
 		-- Character      { }, --   A character constant: 'c', '\n'
 		-- Number         { }, --   A number constant: 234, 0xff
 		-- Boolean        { }, --   A boolean constant: TRUE, false
 		-- Float          { }, --   A floating point constant: 2.3e10
 
-		-- Identifier     { }, -- (*) Any variable name
-		-- Function       { }, --   Function name (also: methods for classes)
+		Identifier({ fg = "#73aef1" }), -- (*) Any variable name
+		Function({ fg = "#ecc48d" }), --   Function name (also: methods for classes)
 
-		-- Statement      { }, -- (*) Any statement
+		Statement({ fg = "#c5e478" }), -- (*) Any statement
 		-- Conditional    { }, --   if, then, else, endif, switch, etc.
 		-- Repeat         { }, --   for, do, while, etc.
 		-- Label          { }, --   case, default, etc.
