@@ -288,7 +288,8 @@ local theme = lush(function(injected_functions)
 		-- sym"@preproc"           { }, -- PreProc
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
-		DashboardHeader({ fg = "#da054f" }), -- DashboardHeader
+		DashboardHeader({ fg = "#c92b62" }), -- DashboardHeader
+		DashboardShortcut({ fg = "#ffd700" }), -- DashboardShortcut
 		sym("@lsp.typemod.variable.defaultLibrary.javascript")({ fg = "#63c6b4" }),
 		sym("@lsp.mod.defaultLibrary.lua")({ fg = "#63c6b4" }),
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
