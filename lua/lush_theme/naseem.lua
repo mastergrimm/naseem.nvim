@@ -202,12 +202,12 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticError            { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticWarn             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticInfo             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-		-- DiagnosticHint             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+		-- DiagnosticHint({ fg = "#9f9d6f", bg = " #292925" }), -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-		-- DiagnosticVirtualTextError { } , -- Used for "Error" diagnostic virtual text.
-		-- DiagnosticVirtualTextWarn  { } , -- Used for "Warn" diagnostic virtual text.
-		-- DiagnosticVirtualTextInfo  { } , -- Used for "Info" diagnostic virtual text.
-		-- DiagnosticVirtualTextHint  { } , -- Used for "Hint" diagnostic virtual text.
+		DiagnosticVirtualTextError({ fg = "#9f6f7c", bg = "#292527" }), -- Used for "Error" diagnostic virtual text.
+		DiagnosticVirtualTextWarn({ fg = "#9f9d6f", bg = " #292925" }), -- Used for "Warn" diagnostic virtual text.
+		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = " #292925" }), -- Used for "Info" diagnostic virtual text.
+		DiagnosticVirtualTextHint({ fg = "#9f9d6f", bg = " #292925" }), -- Used for "Hint" diagnostic virtual text.
 		-- DiagnosticVirtualTextOk    { } , -- Used for "Ok" diagnostic virtual text.
 		-- DiagnosticUnderlineError   { } , -- Used to underline "Error" diagnostics.
 		-- DiagnosticUnderlineWarn    { } , -- Used to underline "Warn" diagnostics.
@@ -289,7 +289,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
 		sym("@lsp.typemod.variable.defaultLibrary.javascript")({ fg = "#63c6b4" }),
-		sym("@lsp.mod.defaultLibrary")({ fg = "#63c6b4" }),
+		sym("@lsp.mod.defaultLibrary.lua")({ fg = "#63c6b4" }),
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
 		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
 		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
