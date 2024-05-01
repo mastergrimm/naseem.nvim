@@ -204,7 +204,7 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticInfo             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticHint({ fg = "#9f9d6f", bg = " #292925" }), -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-		DiagnosticVirtualTextError({ fg = "#9f6f7c", bg = "#292527" }), -- Used for "Error" diagnostic virtual text.
+		DiagnosticVirtualTextError({ fg = "#984d62", bg = "#292527" }), -- Used for "Error" diagnostic virtual text.
 		DiagnosticVirtualTextWarn({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Warn" diagnostic virtual text.
 		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Info" diagnostic virtual text.
 		DiagnosticVirtualTextHint({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Hint" diagnostic virtual text.
@@ -288,6 +288,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@preproc"           { }, -- PreProc
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
+		DashboardHeader({ fg = "#da054f" }), -- DashboardHeader
 		sym("@lsp.typemod.variable.defaultLibrary.javascript")({ fg = "#63c6b4" }),
 		sym("@lsp.mod.defaultLibrary.lua")({ fg = "#63c6b4" }),
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
