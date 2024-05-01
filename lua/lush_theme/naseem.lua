@@ -69,7 +69,7 @@ local theme = lush(function(injected_functions)
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
 		-- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
 		CursorLine({ bg = "#1d2226" }), -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
-		-- Directory      { }, -- Directory names (and other special names in listings)
+		Directory({}), -- Directory names (and other special names in listings)
 		-- DiffAdd        { }, -- Diff mode: Added line |diff.txt|
 		-- DiffChange     { }, -- Diff mode: Changed line |diff.txt|
 		-- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
@@ -103,13 +103,13 @@ local theme = lush(function(injected_functions)
 		-- FloatTitle     { }, -- Title of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windows
 		Pmenu({ bg = "#0b0e11" }), -- Popup menu: Normal item.
-		-- PmenuSel       { }, -- Popup menu: Selected item.
+		PmenuSel({ bg = "#12395e" }), -- Popup menu: Selected item.
 		-- PmenuKind      { }, -- Popup menu: Normal item "kind"
 		-- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
 		-- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
 		-- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
-		-- PmenuSbar({ background = "#0b0e11" }), -- Popup menu: Scrollbar.
-		-- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
+		PmenuSbar({ bg = "#292929" }), -- Popup menu: Scrollbar.
+		PmenuThumb({ bg = "#494a4b" }), -- Popup menu: Thumb of the scrollbar.
 		-- Question       { }, -- |hit-enter| prompt and yes/no questions
 		-- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
 		-- Search         { }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
@@ -123,9 +123,9 @@ local theme = lush(function(injected_functions)
 		-- TabLine        { }, -- Tab pages line, not active tab page label
 		-- TabLineFill    { }, -- Tab pages line, where there are no labels
 		-- TabLineSel     { }, -- Tab pages line, active tab page label
-		-- Title          { }, -- Titles for output from ":set all", ":autocmd" etc.
+		Title({}), -- Titles for output from ":set all", ":autocmd" etc.
 		Visual({ bg = "#1c3f6c" }), -- Visual mode selection
-		-- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
+		VisualNOS({ bg = "#1c3f6c" }), -- Visual mode selection when vim is "Not Owning the Selection".
 		-- WarningMsg     { }, -- Warning messages
 		-- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
 		-- Winseparator   { }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
@@ -289,6 +289,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
 		sym("@lsp.typemod.variable.defaultLibrary.javascript")({ fg = "#63c6b4" }),
+		sym("@lsp.mod.defaultLibrary")({ fg = "#63c6b4" }),
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
 		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
 		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
