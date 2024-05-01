@@ -118,20 +118,20 @@ local theme = lush(function(injected_functions)
 		-- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		-- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		-- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		-- StatusLine     { }, -- Status line of current window
-		-- StatusLineNC   { }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+		StatusLine({ bg = "#07090b" }), -- Status line of current window
+		StatusLineNC({ bg = "#07030b" }), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		-- TabLine        { }, -- Tab pages line, not active tab page label
 		-- TabLineFill    { }, -- Tab pages line, where there are no labels
 		-- TabLineSel     { }, -- Tab pages line, active tab page label
 		-- Title          { }, -- Titles for output from ":set all", ":autocmd" etc.
-		-- Visual         { }, -- Visual mode selection
+		Visual({ bg = "#1c3f6c" }), -- Visual mode selection
 		-- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
 		-- WarningMsg     { }, -- Warning messages
 		-- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
 		-- Winseparator   { }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
 		-- WildMenu       { }, -- Current match in 'wildmenu' completion
-		-- WinBar         { }, -- Window bar of current window
-		-- WinBarNC       { }, -- Window bar of not-current windows
+		WinBar({ bg = "#07090b", gui = "bold" }), -- Window bar of current window
+		WinBarNC({ gui = "" }), -- Window bar of not-current windows
 
 		-- Common vim syntax groups used for all kinds of code and markup.
 		-- Commented-out groups should chain up to their preferred (*) group
@@ -144,16 +144,16 @@ local theme = lush(function(injected_functions)
 		Comment({ fg = "#637777", gui = "italic" }), -- Any comment
 
 		Constant({ fg = "#ecc48d" }), -- (*) Any constant
-		-- String         { }, --   A string constant: "this is a string"
+		String({ fg = "#ecc48d" }), --   A string constant: "this is a string"
 		-- Character      { }, --   A character constant: 'c', '\n'
 		-- Number         { }, --   A number constant: 234, 0xff
 		-- Boolean        { }, --   A boolean constant: TRUE, false
 		-- Float          { }, --   A floating point constant: 2.3e10
 
 		Identifier({ fg = "#73aef1" }), -- (*) Any variable name
-		Function({ fg = "#ecc48d" }), --   Function name (also: methods for classes)
+		Function({ fg = "#73aef1" }), --   Function name (also: methods for classes)
 
-		Statement({ fg = "#c5e478" }), -- (*) Any statement
+		Statement({ fg = "#c792ea" }), -- (*) Any statement
 		-- Conditional    { }, --   if, then, else, endif, switch, etc.
 		-- Repeat         { }, --   for, do, while, etc.
 		-- Label          { }, --   case, default, etc.
@@ -167,14 +167,14 @@ local theme = lush(function(injected_functions)
 		-- Macro          { }, --   Same as Define
 		-- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-		-- Type           { }, -- (*) int, long, char, etc.
+		Type({ fg = "#ffcb8b" }), -- (*) int, long, char, etc.
 		-- StorageClass   { }, --   static, register, volatile, etc.
 		-- Structure      { }, --   struct, union, enum, etc.
 		-- Typedef        { }, --   A typedef
 
-		-- Special        { }, -- (*) Any special symbol
+		Special({ fg = "#ffd700" }), -- (*) Any special symbol
 		-- SpecialChar    { }, --   Special character in a constant
-		-- Tag            { }, --   You can use CTRL-] on this
+		Tag({ fg = "#caece6" }), --   You can use CTRL-] on this
 		-- Delimiter      { }, --   Character that needs attention
 		-- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
 		-- Debug          { }, --   Debugging statements:
@@ -224,6 +224,7 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticSignInfo         { } , -- Used for "Info" signs in sign column.
 		-- DiagnosticSignHint         { } , -- Used for "Hint" signs in sign column.
 		-- DiagnosticSignOk           { } , -- Used for "Ok" signs in sign column.
+		DiagnosticUnnecessary({ fg = "#9bc5f6", gui = "italic" }),
 
 		-- Tree-Sitter syntax groups.
 		--
@@ -287,6 +288,11 @@ local theme = lush(function(injected_functions)
 		-- sym"@preproc"           { }, -- PreProc
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
+		sym("@lsp.typemod.variable.defaultLibrary.javascript")({ fg = "#63c6b4" }),
+		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
+		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
+		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
+		sym("@lsp.type.property.javascript")({ fg = "ef4836" }),
 	}
 end)
 
