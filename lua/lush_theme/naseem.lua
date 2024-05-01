@@ -182,11 +182,11 @@ local theme = lush(function(injected_functions)
 		Underlined({ gui = "underline" }), -- Text that stands out, HTML links
 		-- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
 		Error({ bg = "#ff0000" }), -- Any erroneous construct
-		Todo({ bg = "#89dceb", fg = "#1e1e2e", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-
-		-- These groups are for the native LSP client and diagnostic system. Some
-		-- other LSP clients may use these groups, or use their own. Consult your
-		-- LSP client's documentation.
+		Todo({ bg = "#c99a2c", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		TodoBgNOTE({ bg = "#89dceb", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		TodoFgNOTE({ fg = "#89dceb", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		TodoBgTODO({ bg = "#c99a2c", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		TodoFgTODO({ fg = "#c99a2c", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
 
 		-- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
 		--
