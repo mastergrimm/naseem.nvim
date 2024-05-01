@@ -292,7 +292,7 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
 		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
 		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
-		sym("@lsp.type.property.javascript")({ fg = "ef4836" }),
+		sym("@lsp.type.property.javascript")({ fg = "#e85342" }),
 	}
 end)
 
