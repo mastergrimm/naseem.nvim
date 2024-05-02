@@ -172,7 +172,7 @@ local theme = lush(function(injected_functions)
 		-- Structure      { }, --   struct, union, enum, etc.
 		-- Typedef        { }, --   A typedef
 
-		Special({ fg = "#ffd700" }), -- (*) Any special symbol
+		Special({ fg = "#f2db5f" }), -- (*) Any special symbol
 		-- SpecialChar    { }, --   Special character in a constant
 		Tag({ fg = "#caece6" }), --   You can use CTRL-] on this
 		-- Delimiter      { }, --   Character that needs attention
@@ -294,9 +294,11 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.mod.defaultLibrary.lua")({ fg = "#63c6b4" }),
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
 		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
+		sym("@tag.delimiter.javascript")({ fg = "#63c6b4" }),
 		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
-		sym("@lsp.type.property.javascript")({ fg = "#e85342" }),
-		sym("@variable.member.go")({ fg = "#e85342" }),
+		sym("@lsp.type.property.javascript")({ fg = "#f16151" }),
+		sym("@variable.member.go")({ fg = "#f16151" }),
+		sym("@function.method.call.javascript")({ fg = "#c0d459" }),
 		sym("@tag.attribute.html")({ fg = "#c5e478" }),
 		sym("@tag.attribute.javascript")({ fg = "#c5e478" }),
 	}
