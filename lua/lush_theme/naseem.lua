@@ -204,7 +204,7 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticInfo             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticHint({ fg = "#9f9d6f", bg = " #292925" }), -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-		DiagnosticVirtualTextError({ fg = "#984d62", bg = "#292527" }), -- Used for "Error" diagnostic virtual text.
+		DiagnosticVirtualTextError({ fg = "#ca2654", bg = "#292527" }), -- Used for "Error" diagnostic virtual text.
 		DiagnosticVirtualTextWarn({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Warn" diagnostic virtual text.
 		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Info" diagnostic virtual text.
 		DiagnosticVirtualTextHint({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Hint" diagnostic virtual text.
@@ -296,6 +296,7 @@ local theme = lush(function(injected_functions)
 		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
 		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
 		sym("@lsp.type.property.javascript")({ fg = "#e85342" }),
+		sym("@variable.member.go")({ fg = "#e85342" }),
 	}
 end)
 
