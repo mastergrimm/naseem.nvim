@@ -298,6 +298,7 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.type.property.javascript")({ fg = "#e85342" }),
 		sym("@variable.member.go")({ fg = "#e85342" }),
 		sym("@tag.attribute.html")({ fg = "#c5e478" }),
+		sym("@tag.attribute.javascript")({ fg = "#c5e478" }),
 	}
 end)
 
