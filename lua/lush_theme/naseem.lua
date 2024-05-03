@@ -70,7 +70,7 @@ local theme = lush(function(injected_functions)
 		-- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
 		CursorLine({ bg = "#1d2226" }), -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
 		Directory({}), -- Directory names (and other special names in listings)
-		DiffAdd({ bg = "", fg = "#00008b" }), -- Diff mode: Added line |diff.txt|
+		DiffAdd({ bg = "", fg = "#1f8113" }), -- Diff mode: Added line |diff.txt|
 		DiffChange({ bg = "", fg = "#8b008b" }), -- Diff mode: Changed line |diff.txt|
 		DiffDelete({ bg = "", fg = "#008b8b" }), -- Diff mode: Deleted line |diff.txt|
 		DiffText({ bg = "", fg = "#ff0000" }), -- Diff mode: Changed text within a changed line |diff.txt|
@@ -118,8 +118,8 @@ local theme = lush(function(injected_functions)
 		-- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		-- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		-- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		StatusLine({ bg = "#07090b" }), -- Status line of current window
-		StatusLineNC({ bg = "#07030b" }), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+		-- StatusLine({ bg = "#07090b" }), -- Status line of current window
+		-- StatusLineNC({ bg = "#07030b" }), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		-- TabLine        { }, -- Tab pages line, not active tab page label
 		-- TabLineFill    { }, -- Tab pages line, where there are no labels
 		-- TabLineSel     { }, -- Tab pages line, active tab page label
