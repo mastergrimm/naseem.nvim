@@ -64,7 +64,7 @@ local theme = lush(function(injected_functions)
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		Conceal({ bg = "#6d8ca9", fg = "#000000" }), -- Placeholder characters substituted for concealed text (see 'conceallevel')
 		-- Cursor         { }, -- Character under the cursor
-		CurSearch({ bg = "#fef77b" }), -- Highlighting a search pattern under the cursor (see 'hlsearch')
+		CurSearch({ bg = "#fef77b", fg = "#000000" }), -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
 		-- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -206,8 +206,8 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		DiagnosticVirtualTextError({ fg = "#e1134c", bg = "#270f16" }), -- Used for "Error" diagnostic virtual text.
 		DiagnosticVirtualTextWarn({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Warn" diagnostic virtual text.
-		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Info" diagnostic virtual text.
-		DiagnosticVirtualTextHint({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Hint" diagnostic virtual text.
+		DiagnosticVirtualTextInfo({ fg = "#6f9d9f", bg = "#252928" }), -- Used for "Info" diagnostic virtual text.
+		DiagnosticVirtualTextHint({ fg = "#6f9d9f", bg = "#252928" }), -- Used for "Hint" diagnostic virtual text.
 		-- DiagnosticVirtualTextOk    { } , -- Used for "Ok" diagnostic virtual text.
 		-- DiagnosticUnderlineError   { } , -- Used to underline "Error" diagnostics.
 		-- DiagnosticUnderlineWarn    { } , -- Used to underline "Warn" diagnostics.
