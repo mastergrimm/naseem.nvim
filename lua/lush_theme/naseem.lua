@@ -64,7 +64,7 @@ local theme = lush(function(injected_functions)
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		-- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
 		-- Cursor         { }, -- Character under the cursor
-		-- CurSearch      { }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
+		CurSearch({ bg = "#fef77b" }), -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
 		-- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -119,7 +119,7 @@ local theme = lush(function(injected_functions)
 		-- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		-- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
 		StatusLine({ bg = "#0c0f12" }), -- Status line of current window
-		StatusLineNC({ bg = "#07030b" }), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+		StatusLineNC({}), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		TabLine({}), -- Tab pages line, not active tab page label
 		TabLineFill({}), -- Tab pages line, where there are no labels
 		TabLineSel({ bg = "#1a2f89" }), -- Tab pages line, active tab page label
@@ -150,7 +150,7 @@ local theme = lush(function(injected_functions)
 		-- Boolean        { }, --   A boolean constant: TRUE, false
 		-- Float          { }, --   A floating point constant: 2.3e10
 
-		Identifier({ fg = "#73aef1" }), -- (*) Any variable name
+		Identifier({ fg = "#85d1df" }), -- (*) Any variable name
 		Function({ fg = "#73aef1" }), --   Function name (also: methods for classes)
 
 		Statement({ fg = "#c792ea" }), -- (*) Any statement
@@ -172,7 +172,7 @@ local theme = lush(function(injected_functions)
 		-- Structure      { }, --   struct, union, enum, etc.
 		-- Typedef        { }, --   A typedef
 
-		-- Special({ fg = "#f2db5f" }), -- (*) Any special symbol
+		Special({ fg = "#e0ddcd", gui = "italic" }), -- (*) Any special symbol
 		-- SpecialChar    { }, --   Special character in a constant
 		Tag({ fg = "#caece6" }), --   You can use CTRL-] on this
 		-- Delimiter      { }, --   Character that needs attention
@@ -204,7 +204,7 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticInfo             { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticHint({ fg = "#9f9d6f", bg = " #292925" }), -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		-- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-		DiagnosticVirtualTextError({ fg = "#ca2654", bg = "#292527" }), -- Used for "Error" diagnostic virtual text.
+		DiagnosticVirtualTextError({ fg = "#e1134c", bg = "#270f16" }), -- Used for "Error" diagnostic virtual text.
 		DiagnosticVirtualTextWarn({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Warn" diagnostic virtual text.
 		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Info" diagnostic virtual text.
 		DiagnosticVirtualTextHint({ fg = "#9f9d6f", bg = "#22221f" }), -- Used for "Hint" diagnostic virtual text.
@@ -296,9 +296,9 @@ local theme = lush(function(injected_functions)
 		sym("@tag.delimiter.html")({ fg = "#63c6b4" }),
 		sym("@tag.delimiter.javascript")({ fg = "#63c6b4" }),
 		sym("@punctuation.bracket.javascript")({ fg = "#da70d6" }),
-		sym("@lsp.type.property.javascript")({ fg = "#f16151" }),
-		sym("@variable.member.go")({ fg = "#f16151" }),
-		sym("@function.method.call.javascript")({ fg = "#c0d459" }),
+		sym("@lsp.type.property.javascript")({ fg = "#f56c6c" }),
+		sym("@variable.member.go")({ fg = "#d95b5b" }),
+		sym("@function.method.call.javascript")({ fg = "#9ac663" }),
 		sym("@tag.attribute.html")({ fg = "#c5e478" }),
 		sym("@tag.attribute.javascript")({ fg = "#c5e478" }),
 	}
