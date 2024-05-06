@@ -62,7 +62,7 @@ local theme = lush(function(injected_functions)
 		-- See :h highlight-groups
 		--
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
-		-- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
+		Conceal({ bg = "#6d8ca9", fg = "#000000" }), -- Placeholder characters substituted for concealed text (see 'conceallevel')
 		-- Cursor         { }, -- Character under the cursor
 		CurSearch({ bg = "#fef77b" }), -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
