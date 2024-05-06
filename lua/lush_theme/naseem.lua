@@ -64,7 +64,7 @@ local theme = lush(function(injected_functions)
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		Conceal({ bg = "#6d8ca9", fg = "#000000" }), -- Placeholder characters substituted for concealed text (see 'conceallevel')
 		-- Cursor         { }, -- Character under the cursor
-		CurSearch({ bg = "#fef77b", fg = "#000000" }), -- Highlighting a search pattern under the cursor (see 'hlsearch')
+		CurSearch({ bg = "#fff100", fg = "#000000", gui = "bold" }), -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
 		-- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -112,7 +112,7 @@ local theme = lush(function(injected_functions)
 		PmenuThumb({ bg = "#494a4b" }), -- Popup menu: Thumb of the scrollbar.
 		-- Question       { }, -- |hit-enter| prompt and yes/no questions
 		-- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-		-- Search         { }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+		Search({ bg = "#d5d071", fg = "#000000" }), -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 		-- SpecialKey     { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
 		-- SpellBad       { }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 		-- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
