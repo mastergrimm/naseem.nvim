@@ -206,7 +206,7 @@ local theme = lush(function(injected_functions)
 		-- DiagnosticOk               { } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 		DiagnosticVirtualTextError({ fg = "#e1134c", bg = "#270f16" }), -- Used for "Error" diagnostic virtual text.
 		DiagnosticVirtualTextWarn({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Warn" diagnostic virtual text.
-		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Info" diagnostic virtual text.
+		DiagnosticVirtualTextInfo({ fg = "#9f9d6f", bg = "#1d1d19" }), -- Used for "Info" diagnostic virtual text.
 		DiagnosticVirtualTextHint({ fg = "#9f9d6f", bg = "#292925" }), -- Used for "Hint" diagnostic virtual text.
 		-- DiagnosticVirtualTextOk    { } , -- Used for "Ok" diagnostic virtual text.
 		-- DiagnosticUnderlineError   { } , -- Used to underline "Error" diagnostics.
