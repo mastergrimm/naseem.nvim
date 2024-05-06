@@ -118,11 +118,11 @@ local theme = lush(function(injected_functions)
 		-- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		-- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		-- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		-- StatusLine({ bg = "#07090b" }), -- Status line of current window
-		-- StatusLineNC({ bg = "#07030b" }), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-		-- TabLine        { }, -- Tab pages line, not active tab page label
-		-- TabLineFill    { }, -- Tab pages line, where there are no labels
-		-- TabLineSel     { }, -- Tab pages line, active tab page label
+		StatusLine({ bg = "#0c0f12" }), -- Status line of current window
+		StatusLineNC({ bg = "#07030b" }), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+		TabLine({}), -- Tab pages line, not active tab page label
+		TabLineFill({}), -- Tab pages line, where there are no labels
+		TabLineSel({ bg = "#1a2f89" }), -- Tab pages line, active tab page label
 		Title({}), -- Titles for output from ":set all", ":autocmd" etc.
 		Visual({ bg = "#1c3f6c" }), -- Visual mode selection
 		VisualNOS({ bg = "#1c3f6c" }), -- Visual mode selection when vim is "Not Owning the Selection".
@@ -172,7 +172,7 @@ local theme = lush(function(injected_functions)
 		-- Structure      { }, --   struct, union, enum, etc.
 		-- Typedef        { }, --   A typedef
 
-		Special({ fg = "#f2db5f" }), -- (*) Any special symbol
+		-- Special({ fg = "#f2db5f" }), -- (*) Any special symbol
 		-- SpecialChar    { }, --   Special character in a constant
 		Tag({ fg = "#caece6" }), --   You can use CTRL-] on this
 		-- Delimiter      { }, --   Character that needs attention
@@ -182,11 +182,11 @@ local theme = lush(function(injected_functions)
 		Underlined({ gui = "underline" }), -- Text that stands out, HTML links
 		-- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
 		Error({ bg = "#ff0000" }), -- Any erroneous construct
-		Todo({ bg = "#c99a2c", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		Todo({ bg = "#ecd420", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
 		TodoBgNOTE({ bg = "#89dceb", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
 		TodoFgNOTE({ fg = "#89dceb", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
-		TodoBgTODO({ bg = "#c99a2c", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
-		TodoFgTODO({ fg = "#c99a2c", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		TodoBgTODO({ bg = "#ecd420", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
+		TodoFgTODO({ fg = "#ecd420", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
 
 		-- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
 		--
