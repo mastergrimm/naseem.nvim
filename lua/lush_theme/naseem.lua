@@ -101,7 +101,7 @@ local theme = lush(function(injected_functions)
 		-- NormalFloat    { }, -- Normal text in floating windows.
 		FloatBorder({ fg = "#676e7d" }), -- Border of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windows
-		Pmenu({ bg = "#18222c" }), -- Popup menu: Normal item.
+		Pmenu({ bg = "#13181d" }), -- Popup menu: Normal item.
 		PmenuSel({ bg = "#12395e" }), -- Popup menu: Selected item.
 		-- PmenuKind      { }, -- Popup menu: Normal item "kind"
 		-- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
