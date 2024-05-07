@@ -98,8 +98,8 @@ local theme = lush(function(injected_functions)
 		-- MoreMsg        { }, -- |more-prompt|
 		NonText({ fg = "#454752" }), -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal({ bg = "#0b0e11", fg = "#f1ffff" }), -- Normal text
-		-- NormalFloat    { }, -- Normal text in floating windows.
-		FloatBorder({ fg = "#676e7d", bg = "#ffffff" }), -- Border of floating windows.
+		NormalFloat({ bg = "#0b0e11" }), -- Normal text in floating windows.
+		FloatBorder({ fg = "#676e7d" }), -- Border of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windows
 		Pmenu({ bg = "#13181d" }), -- Popup menu: Normal item.
 		PmenuSel({ bg = "#12395e" }), -- Popup menu: Selected item.
@@ -186,7 +186,6 @@ local theme = lush(function(injected_functions)
 		TodoFgNOTE({ fg = "#89dceb", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
 		TodoBgTODO({ bg = "#ecd420", fg = "#1e1e2e", gui = "italic, bold" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
 		TodoFgTODO({ fg = "#ecd420", gui = "italic" }), -- Anything that needs extra attention; mostly the keywords TODO FIXME and XX
-
 		LazyButton({ fg = "#fefefe", bg = "#3a4754" }),
 		LazyH1({ bg = "#0e5caa", gui = "bold" }),
 
