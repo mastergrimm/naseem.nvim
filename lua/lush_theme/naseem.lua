@@ -99,10 +99,9 @@ local theme = lush(function(injected_functions)
 		NonText({ fg = "#454752" }), -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal({ bg = "#0b0e11", fg = "#f1ffff" }), -- Normal text
 		-- NormalFloat    { }, -- Normal text in floating windows.
-		-- FloatBorder    { }, -- Border of floating windows.
-		-- FloatTitle     { }, -- Title of floating windows.
+		FloatBorder({ fg = "#676e7d" }), -- Border of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windows
-		Pmenu({ bg = "#0b0e11" }), -- Popup menu: Normal item.
+		Pmenu({ bg = "#18222c" }), -- Popup menu: Normal item.
 		PmenuSel({ bg = "#12395e" }), -- Popup menu: Selected item.
 		-- PmenuKind      { }, -- Popup menu: Normal item "kind"
 		-- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
@@ -118,8 +117,8 @@ local theme = lush(function(injected_functions)
 		-- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		-- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		-- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		StatusLine({ bg = "#0c0f12" }), -- Status line of current window
-		StatusLineNC({}), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+		-- StatusLine({ bg = "#0c0f12" }), -- Status line of current window
+		-- StatusLineNC({}), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		TabLine({}), -- Tab pages line, not active tab page label
 		TabLineFill({}), -- Tab pages line, where there are no labels
 		TabLineSel({ bg = "#1a2f89" }), -- Tab pages line, active tab page label
