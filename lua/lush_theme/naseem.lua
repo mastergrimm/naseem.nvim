@@ -100,7 +100,7 @@ local theme = lush(function(injected_functions)
 		Normal({ bg = "#0b0e11", fg = "#f1ffff" }), -- Normal text
 		NormalFloat({ bg = "#0b0e11" }), -- Normal text in floating windows.
 		FloatBorder({ fg = "#676e7d" }), -- Border of floating windows.
-		-- NormalNC       { }, -- normal text in non-current windows
+		-- NormalNC       { }, -- normal text in non-current windowshttps://01hxv7gewr38t1473fbjdyc4q9-ebad485c25afabf7f3db.myshopify.dev/shop#cart-aside
 		Pmenu({ bg = "#13181d" }), -- Popup menu: Normal item.
 		PmenuSel({ bg = "#12395e" }), -- Popup menu: Selected item.
 		-- PmenuKind      { }, -- Popup menu: Normal item "kind"
@@ -171,7 +171,7 @@ local theme = lush(function(injected_functions)
 		-- Structure      { }, --   struct, union, enum, etc.
 		-- Typedef        { }, --   A typedef
 
-		Special({ fg = "#e0ddcd", gui = "italic" }), -- (*) Any special symbol
+		Special({ fg = "#e0ddcd" }), -- (*) Any special symbol
 		-- SpecialChar    { }, --   Special character in a constant
 		Tag({ fg = "#caece6" }), --   You can use CTRL-] on this
 		-- Delimiter      { }, --   Character that needs attention
@@ -290,7 +290,6 @@ local theme = lush(function(injected_functions)
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
 		DashboardHeader({ fg = "#c92b62" }), -- DashboardHeader
-		DashboardShortcut({ fg = "#ffd700" }), -- DashboardShortcut
 		sym("@lsp.typemod.variable.defaultLibrary.javascript")({ fg = "#63c6b4" }),
 		sym("@lsp.mod.defaultLibrary.lua")({ fg = "#63c6b4" }),
 		sym("@lsp.type.parameter.javascript")({ fg = "#d7dbe0" }),
