@@ -303,6 +303,7 @@ local theme = lush(function(injected_functions)
 		sym("@tag.attribute.html")({ fg = "#c5e478" }),
 		sym("@tag.attribute.javascript")({ fg = "#c5e478" }),
 		sym("@lsp.type.property.lua")({ fg = "#73aef1" }),
+		sym("@tag.attribute.svelte")({ fg = "#c5e478" }),
 	}
 end)
 
