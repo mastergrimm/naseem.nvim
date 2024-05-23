@@ -306,6 +306,7 @@ local theme = lush(function(injected_functions)
 		sym("@tag.attribute.svelte")({ fg = "#c5e478" }),
 		sym("@tag.delimiter.svelte")({ fg = "#63c6aa" }),
 		sym("@lsp.type.class.svelte")({ fg = "#63c6aa" }),
+		sym("@type.builtin.typescript")({ fg = "#f56c6c" }),
 	}
 end)
 
