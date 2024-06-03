@@ -78,7 +78,7 @@ local theme = lush(function(injected_functions)
 		-- TermCursor     { }, -- Cursor in a focused terminal
 		-- TermCursorNC   { }, -- Cursor in an unfocused terminal
 		ErrorMsg({ fg = "#f7563b", bg = "#221518" }), -- Error messages on the command line
-		VertSplit({ fg = "#2b2d2f" }), -- Column separating vertically split windows
+		VertSplit({ fg = "#2b2d2f", bg = "#2b2d2f" }),
 		-- Folded({}), -- Line used for closed folds
 		-- FoldColumn     { }, -- 'foldcolumn'
 		SignColumn({}), -- Column where |signs| are displayed
@@ -127,7 +127,7 @@ local theme = lush(function(injected_functions)
 		VisualNOS({ bg = "#1c3f6c" }), -- Visual mode selection when vim is "Not Owning the Selection".
 		-- WarningMsg     { }, -- Warning messages
 		-- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-		-- Winseparator   { }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+		Winseparator({ fg = "#2b2d2f" }), -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
 		-- WildMenu       { }, -- Current match in 'wildmenu' completion
 		WinBar({ bg = "#07090b", gui = "bold" }), -- Window bar of current window
 		WinBarNC({ gui = "" }), -- Window bar of not-current windows
