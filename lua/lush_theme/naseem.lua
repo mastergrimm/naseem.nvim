@@ -192,6 +192,8 @@ local theme = lush(function(injected_functions)
 		MasonMutedBlock { bg = '#515d6a' },
 		MasonHighlightBlockBold { bg = '#0e5caa', gui = 'bold' },
 		MasonHighlight { fg = '#89dceb' },
+		IblIndent { fg = '#1d1f25' },
+		IblScope { fg = '#444752' },
 
 		-- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
 		--
