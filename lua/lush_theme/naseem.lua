@@ -197,6 +197,14 @@ local theme = lush(function(injected_functions)
 		IblIndent { fg = '#1d1f25' },
 		IblScope { fg = '#444752' },
 
+		-- Cmp Text
+		CmpItemAbbrMatch { fg = '#569CD6' },
+		CmpItemAbbrMatchFuzzy { fg = '#569CD6' },
+		CmpItemKindFunction { fg = '#C586C0' },
+		CmpItemKindMethod { fg = '#C586C0' },
+		CmpItemKindVariable { fg = '#9CDCFE' },
+		CmpItemKindKeyword { fg = '#D4D4D4' },
+
 		-- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
 		--
 		-- LspReferenceText            { } , -- Used for highlighting "text" references
