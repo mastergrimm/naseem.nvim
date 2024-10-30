@@ -63,7 +63,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		Conceal { bg = '#6d8ca9', fg = '#000000' }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
-		Cursor { reverse = true }, -- Character under the cursor
+		Cursor { bg = '#f1ffff', fg = '#000000' }, -- Character under the cursor
 		CurSearch { bg = '#fff100', fg = '#000000', gui = 'bold' }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor { reverse = true }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
