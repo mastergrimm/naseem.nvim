@@ -63,7 +63,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		Conceal { bg = '#6d8ca9', fg = '#000000' }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
-		-- Cursor { reverse = true }, -- Character under the cursor
+		Cursor { reverse = true }, -- Character under the cursor
 		CurSearch { bg = '#fff100', fg = '#000000', gui = 'bold' }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor { reverse = true }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
@@ -75,8 +75,8 @@ local theme = lush(function(injected_functions)
 		DiffDelete { bg = '', fg = '#008b8b' }, -- Diff mode: Deleted line |diff.txt|
 		DiffText { bg = '', fg = '#ff0000' }, -- Diff mode: Changed text within a changed line |diff.txt|
 		-- EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
-		-- TermCursor     { }, -- Cursor in a focused terminal
-		-- TermCursorNC   { }, -- Cursor in an unfocused terminal
+		TermCursor {}, -- Cursor in a focused terminal
+		TermCursorNC {}, -- Cursor in an unfocused terminal
 		ErrorMsg { fg = '#f7563b', bg = '#221518' }, -- Error messages on the command line
 		VertSplit { fg = '#2b2d2f', bg = '#2b2d2f' },
 		-- Folded({}), -- Line used for closed folds
@@ -189,6 +189,7 @@ local theme = lush(function(injected_functions)
 		LazyButton { fg = '#fefefe', bg = '#3a4754' },
 		LazyH1 { bg = '#0e5caa', gui = 'bold' },
 
+		LazyNormal { bg = '#0a1219' },
 		MasonNormal { bg = '#0a1219' },
 		MasonMutedBlock { bg = '#515d6a' },
 		MasonHighlightBlockBold { bg = '#0e5caa', gui = 'bold' },
