@@ -98,8 +98,8 @@ local theme = lush(function(injected_functions)
 		-- MoreMsg        { }, -- |more-prompt|
 		NonText { fg = '#454752' }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal { bg = '#0b0e11', fg = '#f1ffff' }, -- Normal text
-		NormalFloat { bg = '#151d32' }, -- Normal text in floating windows.
-		FloatBorder { fg = '#676e7d', bg = '#151d32' }, -- Border of floating windows.
+		NormalFloat { bg = '#0b0e11' }, -- Normal text in floating windows.
+		FloatBorder { fg = '#676e7d', bg = '#0b0e11' }, -- Border of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windowshttps://01hxv7gewr38t1473fbjdyc4q9-ebad485c25afabf7f3db.myshopify.dev/shop#cart-aside
 		Pmenu { bg = '#13181d' }, -- Popup menu: Normal item.
 		PmenuSel { bg = '#12395e' }, -- Popup menu: Selected item.
@@ -189,6 +189,7 @@ local theme = lush(function(injected_functions)
 		LazyButton { fg = '#fefefe', bg = '#3a4754' },
 		LazyH1 { bg = '#0e5caa', gui = 'bold' },
 
+		MasonNormal { bg = '#0a1219' },
 		MasonMutedBlock { bg = '#515d6a' },
 		MasonHighlightBlockBold { bg = '#0e5caa', gui = 'bold' },
 		MasonHighlight { fg = '#89dceb' },
