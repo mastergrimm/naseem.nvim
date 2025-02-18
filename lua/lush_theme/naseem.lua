@@ -196,6 +196,8 @@ local theme = lush(function(injected_functions)
 		MasonHighlight { fg = '#89dceb' },
 		IblIndent { fg = '#1d1f25' },
 		IblScope { fg = '#444752' },
+		SnacksIndent { fg = '#1d1f25' },
+		SnacksScope { fg = '#444752' },
 
 		-- Cmp Text
 		CmpItemAbbrMatch { fg = '#569CD6' },
