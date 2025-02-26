@@ -308,7 +308,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@debug"             { }, -- Debug
 		-- sym"@tag"               { }, -- Tag
 		DashboardHeader { fg = '#c92b62' }, -- DashboardHeader
-		SnacksDashboardTitle { fg = '#c92b62' }, -- DashboardHeader
+		SnacksDashboardHeader { fg = '#c92b62' }, -- DashboardHeader
 		sym '@lsp.typemod.variable.defaultLibrary.javascript' { fg = '#63c6b4' },
 		sym '@lsp.mod.defaultLibrary.lua' { fg = '#63c6b4' },
 		sym '@lsp.type.parameter.javascript' { fg = '#d7dbe0' },
