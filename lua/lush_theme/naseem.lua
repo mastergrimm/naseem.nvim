@@ -199,6 +199,8 @@ local theme = lush(function(injected_functions)
 		SnacksIndent { fg = '#1d1f25' },
 		SnacksScope { fg = '#444752' },
 
+		SnacksPickerDir { fg = '#b1bae8' },
+
 		-- Cmp Text
 		CmpItemAbbrMatch { fg = '#569CD6' },
 		CmpItemAbbrMatchFuzzy { fg = '#569CD6' },
