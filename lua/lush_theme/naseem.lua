@@ -215,6 +215,8 @@ local theme = lush(function(injected_functions)
 		BlinkCmpKindVariable { fg = '#9CDCFE' },
 		BlinkCmpKindKeyword { fg = '#D4D4D4' },
 
+		BlinkCmpMenuBorder { fg = '#676e7d' },
+
 		-- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
 		--
 		-- LspReferenceText            { } , -- Used for highlighting "text" references
