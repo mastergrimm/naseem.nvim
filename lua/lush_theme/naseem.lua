@@ -202,9 +202,8 @@ local theme = lush(function(injected_functions)
 		SnacksPickerDir { fg = '#b1bae8' },
 
 		-- Cmp Text
-		CmpItemAbbrMatch { fg = '#49b65e' },
-		CmpItemAbbrMatchFuzzy { fg = '#88bd92' },
-
+		CmpItemAbbrMatch { fg = '#569CD6' },
+		CmpItemAbbrMatchFuzzy { fg = '#569CD6' },
 		CmpItemKindFunction { fg = '#C586C0' },
 		CmpItemKindMethod { fg = '#C586C0' },
 		CmpItemKindVariable { fg = '#9CDCFE' },
