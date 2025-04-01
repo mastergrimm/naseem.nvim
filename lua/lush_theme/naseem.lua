@@ -98,7 +98,7 @@ local theme = lush(function(injected_functions)
 		-- MoreMsg        { }, -- |more-prompt|
 		NonText { fg = '#454752' }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal { bg = '#0b0e11', fg = '#f1ffff' }, -- Normal text
-		NormalFloat { bg = '#0b0e11' }, -- Normal text in floating windows.
+		NormalFloat { bg = '#0f1419' }, -- Normal text in floating windows.
 		FloatBorder { fg = '#676e7d', bg = '#0b0e11' }, -- Border of floating windows.
 		-- NormalNC       { }, -- normal text in non-current windowshttps://01hxv7gewr38t1473fbjdyc4q9-ebad485c25afabf7f3db.myshopify.dev/shop#cart-aside
 		Pmenu { bg = '#13181d' }, -- Popup menu: Normal item.
@@ -215,9 +215,8 @@ local theme = lush(function(injected_functions)
 		BlinkCmpKindVariable { fg = '#9CDCFE' },
 		BlinkCmpKindKeyword { fg = '#D4D4D4' },
 
-		BlinkCmpMenuBorder { fg = '#676e7d' },
+		BlinkCmpMenu { bg = '#13181d' },
 
-		-- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
 		--
 		-- LspReferenceText            { } , -- Used for highlighting "text" references
 		-- LspReferenceRead            { } , -- Used for highlighting "read" references
